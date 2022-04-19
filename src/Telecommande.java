@@ -7,8 +7,16 @@ import static org.junit.Assert.assertThrows;
 
 public class Telecommande {
     ArrayList<Lampe> lampes;
+    ArrayList<Hifi> Hifis;
     public Telecommande() {
         lampes = new ArrayList<Lampe>(0);
+        Hifis =new ArrayList<Hifi>(0);
+    }
+
+    public void ajouterHifi (Hifi h){
+        if(h!=null) {
+            Hifis.add(h);
+        }
     }
     public void ajouterLampe (Lampe l){
         if(l!=null) {
@@ -20,6 +28,12 @@ public class Telecommande {
     }
     public void desactiverLampe(int i){
         lampes.get(i).eteindre();
+    }
+    public void ajouterSonATout(){
+        for(Hifi h : Hifis){
+            h.allumer();
+        }
+
     }
     public void activerTout(){
     for(Lampe l : lampes){
@@ -60,9 +74,5 @@ public class Telecommande {
                  () -> { t3.get(4).allumer(); }
          ) ;
     }
-
-
-
-
 
 }
