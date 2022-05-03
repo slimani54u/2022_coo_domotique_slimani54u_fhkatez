@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/22603/depot/2022_coo_domotique_slimani54u_fhkatez/Zhang/src</OriginalElement>
+  <nodes>
+    <node x="164.0" y="0.0">Lampe</node>
+    <node x="36.75" y="175.0">Telecommande</node>
+    <node x="-37.78556701030931" y="11.5">Hifi</node>
+    <node x="-319.5" y="449.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Telecommande" target="Hifi" relationship="DEPENDENCY">
+      <point x="52.25" y="-119.0" />
+      <point x="194.953125" y="164.0" />
+      <point x="205.875" y="164.0" />
+      <point x="205.875" y="144.0" />
+      <point x="108.0" y="144.0" />
+      <point x="36.0" y="50.0" />
+    </edge>
+    <edge source="Telecommande" target="Lampe" relationship="DEPENDENCY">
+      <point x="68.66666666666669" y="-96.0" />
+      <point x="208.41666666666669" y="154.0" />
+      <point x="243.5" y="154.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="Telecommande" target="Lampe" relationship="TO_MANY">
+      <point x="0.0" y="-96.0" />
+      <point x="139.75" y="154.0" />
+      <point x="123.28921568627453" y="154.0" />
+      <point x="123.28921568627453" y="144.0" />
+      <point x="190.5" y="144.0" />
+      <point x="-53.0" y="61.5" />
+    </edge>
+    <edge source="Telecommande" target="Hifi" relationship="TO_MANY">
+      <point x="-52.25" y="-119.0" />
+      <point x="90.453125" y="164.0" />
+      <point x="67.0" y="164.0" />
+      <point x="67.0" y="154.0" />
+      <point x="36.0" y="154.0" />
+      <point x="-36.0" y="50.0" />
+    </edge>
+    <edge source="Main" target="Telecommande" relationship="CREATE">
+      <point x="0.0" y="-50.0" />
+      <point x="-184.5" y="393.0" />
+      <point x="141.25" y="393.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="Main" target="Lampe" relationship="CREATE">
+      <point x="0.0" y="-50.0" />
+      <point x="-184.5" y="393.0" />
+      <point x="262.53921568627453" y="393.0" />
+      <point x="262.53921568627453" y="154.0" />
+      <point x="296.5" y="154.0" />
+      <point x="53.0" y="61.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="168.0" y="287.5" />
+  <SelectedNodes>
+    <node>Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
