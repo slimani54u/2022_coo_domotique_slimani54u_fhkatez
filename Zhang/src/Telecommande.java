@@ -1,66 +1,43 @@
 import java.util.ArrayList;
 
 public class Telecommande {
-    ArrayList<Lampe> lampes;
-    ArrayList<Hifi>hifis;
+    ArrayList<Appareil>appareils;
 
     public Telecommande() {
-        lampes = new ArrayList<Lampe>(0);
-        hifis = new ArrayList<Hifi>(0);
+        appareils = new ArrayList<Appareil>(0);
     }
 
-    public void activerLampe(int i) {
-        lampes.get(i).allumer();
-    }
-
-
-    public void desactiverLampe(int i) {
-        lampes.get(i).eteindre();
+    public void activer(int i) {
+        appareils.get(i).allumer();
     }
 
 
-    public void ajouterLampe(Lampe l) {
-        if (l != null) {
-            lampes.add(l);
+    public void desactiver(int i) {
+        appareils.get(i).eteindre();
+    }
+
+
+    public void ajouter(Appareil a) {
+        if (a != null) {
+            appareils.add(a);
         }
     }
 
     public String toString() {
-        String s = "";
-        for (Lampe lampe : lampes) {
-            s += lampe + "\n";
-        }
-
-        for(Hifi i : hifis){
-            s += i+"\n";
-        }
-        return s;
+        return "Telecommande{"+
+                appareils;
     }
 
     public void activerTout() {
-        for (Lampe l : lampes) {
-            l.allumer();
+        for (Appareil a : appareils) {
+            a.allumer();
         }
     }
 
-    public void eteindretoushifi(){
-        for(Hifi i : hifis){
-            i.eteindre();
+    public void eteindretous(){
+        for(Appareil a : appareils){
+            a.eteindre();
         }
-    }
-
-    public void ajouthifi(Hifi i){
-        if(i != null){
-            hifis.add(i);
-        }
-    }
-
-    public void allmuercertainhifi(int i){
-        hifis.get(i).allumer();
-    }
-
-    public void eteindrecertainhifi(int i){
-        hifis.get(i).eteindre();
     }
 
 

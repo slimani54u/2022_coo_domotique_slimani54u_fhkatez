@@ -103,4 +103,14 @@ public class LampeTest {
 
 	}
 
+	@Test
+	public void test1_Ajoutunelampe(){
+		Lampe l = new Lampe("lampe1");
+		Telecommande t = new Telecommande();
+		t.ajouterLampe(l);
+		System.out.println(t);
+		assertEquals("lampe1 devrait etre dans la telecommande","lampe1: Off",t);
+	}
+
+
 }

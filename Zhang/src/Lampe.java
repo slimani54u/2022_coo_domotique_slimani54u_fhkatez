@@ -5,7 +5,7 @@
  * prive et manipulable par les methodes allumer et eteindre
  */
 
-public class Lampe {
+public class Lampe extends Appareil{
 
 	/**
 	 * nom de la lampe
