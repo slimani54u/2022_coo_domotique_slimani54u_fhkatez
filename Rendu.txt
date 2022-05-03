@@ -1,0 +1,21 @@
+3)
+on a eu besoin d'ajouter 2 lignes
+
+5)
+on repete du code
+
+6)
+cela signifirai qu'on pourrai pas creer une interface qui nous permetra d'evite
+ de dupliquer du code
+
+7)
+telecommande permet de gerer les diferrents appareils mais on est toujours
+dans de la duplication
+
+12)
+on a creer une nouvelle interface pour eviter le duplicage de code cette interface est l'interface appareil est posseder
+par la classe telecommande mais aussi elle a un heritage sur la classe hifi mais aussi tout autre nouvelle appreil
+qu'on veux ajouter
+
+13) il faut creer un nouvelle classe qui heritent de la classe appareil
+
