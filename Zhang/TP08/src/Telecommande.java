@@ -7,17 +7,17 @@ public class Telecommande {
         appareils = new ArrayList<Appareil>(0);
     }
 
-    public void activer(int i) {
+    public void activerAppareil(int i) {
         appareils.get(i).allumer();
     }
 
 
-    public void desactiver(int i) {
+    public void desactiverAppareil(int i) {
         appareils.get(i).eteindre();
     }
 
 
-    public void ajouter(Appareil a) {
+    public void ajouterAppareil(Appareil a) {
         if (a != null) {
             appareils.add(a);
         }
@@ -38,6 +38,10 @@ public class Telecommande {
         for(Appareil a : appareils){
             a.eteindre();
         }
+    }
+
+    public int getNombre(){
+        return appareils.size();
     }
 
 

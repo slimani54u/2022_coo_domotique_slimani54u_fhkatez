@@ -1,0 +1,38 @@
+@startuml
+class Lampe{
++allumer():void
++eteindre():void
+}
+
+class Telecommande{
++ajouterApp(App):void
++afficherApp(App):void
++affichertous():void
+}
+
+class Hifi{
++allumer():void
++eteindre():void
+}
+
+
+interface Appareil{
++allumer():void
++eteindre():void
+}
+
+Telecommande "*"->"*" Appareil : -appareil
+Lampe ..|> Appareil
+Hifi ..|> Appareil
+cheminee_adapter -|> cheminee
+cheminee_adapter ..|> Appareil
+
+class cheminee{
+...
+}
+
+class cheminee_adapter{
++allumer():void
++eteindre():void
+}
+@enduml
